@@ -7,8 +7,6 @@ Allocations are normalised to total daily hours.
 
 from __future__ import annotations
 
-import numpy as np
-
 from core.config import get_settings
 from core.logging import get_logger
 from ml.feature_engineering import SubjectFeatures

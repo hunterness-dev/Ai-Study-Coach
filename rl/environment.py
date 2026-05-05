@@ -10,8 +10,8 @@ from __future__ import annotations
 
 from typing import Any
 
-import numpy as np
 import gymnasium as gym
+import numpy as np
 from gymnasium import spaces
 
 from ml.feature_engineering import SubjectFeatures

@@ -8,9 +8,9 @@ from __future__ import annotations
 from sqlalchemy.orm import Session
 
 from core.logging import get_logger
-from ml.feature_engineering import engineer_features, SubjectFeatures
+from ml.feature_engineering import SubjectFeatures, engineer_features
 from ml.pipeline import load_pipeline, predict
-from rl.agent import load_agent, get_allocation
+from rl.agent import get_allocation, load_agent
 from services.scheduler import allocate_hours
 from services.tracking_service import get_all_logs, group_logs_by_subject
 

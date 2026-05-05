@@ -11,10 +11,10 @@ import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 from core.logging import configure_logging
-from utils.database import init_db, SessionLocal
-from services.tracking_service import get_all_logs, group_logs_by_subject
 from ml.feature_engineering import engineer_features
 from ml.pipeline import train
+from services.tracking_service import get_all_logs, group_logs_by_subject
+from utils.database import SessionLocal, init_db
 
 configure_logging()
 

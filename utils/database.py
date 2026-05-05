@@ -1,8 +1,10 @@
+import os
+
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, DeclarativeBase, Session
+from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
+
 from core.config import get_settings
 from core.logging import get_logger
-import os
 
 logger = get_logger(__name__)
 settings = get_settings()

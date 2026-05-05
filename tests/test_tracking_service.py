@@ -1,7 +1,5 @@
 """Tests for the tracking service."""
 
-import pytest
-
 from services.tracking_service import (
     create_log,
     get_all_logs,

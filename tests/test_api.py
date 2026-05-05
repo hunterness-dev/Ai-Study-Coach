@@ -1,7 +1,5 @@
 """Tests for FastAPI endpoints."""
 
-import pytest
-
 
 def test_health(api_client):
     resp = api_client.get("/health")
@@ -42,10 +40,10 @@ def test_log_session_zero_hours(api_client):
 
 def test_get_plan_no_data(api_client):
     # Fresh client with no logs → 422
+    from main import app
     from fastapi.testclient import TestClient
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
-    from main import app
     from utils.database import Base, get_db
 
     engine = create_engine("sqlite://", connect_args={"check_same_thread": False})

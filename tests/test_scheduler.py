@@ -1,7 +1,5 @@
 """Tests for the rule-based scheduler."""
 
-import pytest
-
 from ml.feature_engineering import SubjectFeatures
 from services.scheduler import allocate_hours, compute_priorities
 

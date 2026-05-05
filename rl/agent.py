@@ -7,8 +7,6 @@ Handles training, persistence, and inference.
 from __future__ import annotations
 
 import os
-from typing import Sequence
-
 import numpy as np
 
 from core.config import get_settings
