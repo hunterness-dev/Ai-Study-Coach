@@ -8,6 +8,7 @@ Handles training, persistence, and inference.
 
 
 import os
+
 import numpy as np
 
 from core.config import get_settings
