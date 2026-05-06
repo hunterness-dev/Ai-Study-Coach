@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 PPO agent wrapper using stable-baselines3.
 
@@ -14,7 +15,7 @@ from core.logging import get_logger
 from ml.feature_engineering import SubjectFeatures
 from rl.environment import StudyEnv
 
-from __future__ import annotations
+
 
 logger = get_logger(__name__)
 settings = get_settings()
