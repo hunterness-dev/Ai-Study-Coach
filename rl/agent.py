@@ -4,7 +4,7 @@ PPO agent wrapper using stable-baselines3.
 Handles training, persistence, and inference.
 """
 
-from __future__ import annotations
+
 
 import os
 import numpy as np
@@ -13,6 +13,8 @@ from core.config import get_settings
 from core.logging import get_logger
 from ml.feature_engineering import SubjectFeatures
 from rl.environment import StudyEnv
+
+from __future__ import annotations
 
 logger = get_logger(__name__)
 settings = get_settings()
